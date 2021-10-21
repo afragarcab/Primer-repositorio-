@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!--
     <div style="background: blue; 
                 width:200px;
                 height: 200px;
@@ -19,12 +20,15 @@
                 height: 200px;
                 float: left;">
     </div>
+     Diferencia entre display none y visibilty hidden es que display none mueve todos los elementos hacia arriba y el visibilty está puesto
+                sigue existiendo el hueco, aunque no se vea 
     <div style="background: green; 
                 width:400px;
                 height: 400px;
                 clear: both;
-                overflow: hidden">
+                overflow: hidden;">
                 
+    
             <img src="Imagenes/mediamarkt.jpg" 
             style="float: right;">
             <span>Texto del anuncio,Texto del anuncio,
@@ -37,7 +41,46 @@
                 Texto del anuncio,Texto del anuncio,
             </span>
     </div>
+       -->
+       
+    <div style="background-color: yellow;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                z-index: 5;
+                border: 5px solid black;
+                border-radius: 10px 5px 25px 4px;
+                box-shadow: 5px 5px 1px orange;">
+    </div>
+    <div style="background-color: red;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                z-index: 3;">
+    </div>
+
+    <div style="background-color: green;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                z-index: 4;">
+    </div>
+
+    <div style="background-color: purple;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                z-index: 1;">
+    </div>
+
 
 </body>
-
 </html>
