@@ -8,16 +8,29 @@
     <title>Ejercicio 5 clase</title>
 
     <style>
-        table, td, th{
-            border:1px solid black;
+        table,
+        td,
+        th {
+            border: 1px solid black;
         }
-        #celdastablas{
+
+        #celdastablas {
             border-collapse: collapse;
+        }
+
+        #celdastabla2 {
+            border-collapse: collapse;
+        }
+    </style>
+    <style>
+        .Colortabla2 {
+            background-color: rgba(26, 128, 0, 0.445)
         }
     </style>
 </head>
 
 <body>
+
     <table id="celdastablas">
         <thead>
             <tr>
@@ -68,7 +81,7 @@
                 <td><span><img src="Imagenes/puntoscolores.PNG"></span></td>
                 <td><span><img src="Imagenes/puntogris.PNG"></span></td>
                 <td colspan="2"><span><img src="Imagenes/doblepunto.PNG"></img></span></td>
-                
+
             </tr>
             <tr>
                 <th><span>Pantalla</span></th>
@@ -76,7 +89,7 @@
                         retroiluminación </span></td>
                 <td colspan="2"><span> LCD de 6 cm (diagonal)</br>
                         con retroiluminación</span></td>
-                
+
             </tr>
 
         </tbody>
@@ -94,23 +107,221 @@
             </tr>
         </tfoot>
     </table>
+    <br />
+    <!-- Ahora voy a hacer la segunda tabla -->
 
-    <table>
-        <thead></thead>
-        <tbody></tbody>
-        <tfoot></tfoot>
-    </table>
+    <fieldset style="background-color: rgba(6, 63, 4, 0.767);width: max-content;">
+        <table id="celdastabla2" style="background-color: white;">
+            <caption style="text-align: center;">Horario</caption>
+            <thead>
+                <tr style="background-color: rgba(14, 66, 2, 0.445);">
+                    <th></th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="Colortabla2"> <span> 1º hora <br />
+                            (8:20-9:10)
+                        </span>
+                    </th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="Colortabla2"><span> 2º hora <br />
+                            (9:10-10:05)
+                        </span>
+                    </th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="Colortabla2"><span> 3º hora <br />
+                            (10:05-11:00)
+                        </span>
+                    </th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr style="background-color: rgba(255, 105, 180, 0.192);">
+                    <th colspan="6" style="letter-spacing: 30px;"><span>RECREO</span></th>
+                </tr>
+                <tr>
+                    <th class="Colortabla2"><span> 4º hora <br />
+                            (11:30-12:25)
+                        </span>
+                    </th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="Colortabla2"><span> 5º hora <br />
+                            (12:25-13:20)
+                        </span>
+                    </th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th class="Colortabla2"><span> 6º hora <br />
+                            (8:20-9:10)
+                        </span>
+                    </th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </fieldset>
 
-    <table>
-        <thead></thead>
-        <tbody></tbody>
-        <tfoot></tfoot>
-    </table>
+    <!-- Ahora voy a hacer la tercera tabla -->
+    <fieldset style="background-color:burlywood; width: max-content;">
+        <table style="background-color: white;">
+            <thead>
+                <tr>
+                    <th colspan="4" style="color: white; background-color: grey;"><span>
+                            Climas de América del Sur
+                        </span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2" rowspan="4"><span>Parte de arriba <br />
+                            de América del <br />
+                            Sur. Países <br />
+                            como:</span>
+                    </td>
+                    <td><span>Venezuela</span></td>
+                    <td colspan="2" rowspan="4"><span>Parte de abajo de <br />
+                            América del Sur.<br />
+                            Países como:
+                        </span>
+                    </td>
+                    <td><span>Argentina</span></td>
+                </tr>
 
+                <tr>
+                    <td><span>Colombia</span></td>
+                    <td><span>Chile</span></td>
+                </tr>
+
+                <tr>
+                    <td><span>Ecuador</span></td>
+                    <td><span>Uruguay</span></td>
+                </tr>
+                <tr>
+                    <td><span>Perú</span></td>
+                    <td><span>Paraguay</span></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="6"><span>Bosque tropical, clima de <br />
+                            sabana, clima marítimo con <br />
+                            inviernos secos</span></td>
+                </tr>
+                <tr>
+                    <td><span>Climas marítimos con <br />
+                            vernaos secos, con <br />
+                            inviernos secos, climas <br />
+                            frios, clima de estepa, clima <br />
+                            desértico</span>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </fieldset>
+    <!-- Ahora voy a hacer la cuarta y última tabla -->
     <table>
-        <thead></thead>
-        <tbody></tbody>
-        <tfoot></tfoot>
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 
