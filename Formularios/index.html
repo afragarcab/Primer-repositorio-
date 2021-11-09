@@ -29,7 +29,8 @@
                 </tr>
                 <tr>
                     <td><label>Apellidos</label></td>
-                    <td><input type="text" name="Apellidos" id="Apellidos" value="" placeholder="Introduzca nombre" autofocus></td>
+                    <td><input type="text" name="Apellidos" id="Apellidos" value="" placeholder="Introduzca nombre" autofocus pattern="[A-Z]{10}[0-9]{2}"
+                        required></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -101,6 +102,17 @@
                         <input type="url" name="web" id="web" value="http://">
                         <input type="search" name="search" id="search"  >
                         <input type="tel" name="tel" id="tel"  >
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Fechas">Fechas</label></td>
+                    <td>
+                        <input type="date" name="fecha1" id="Fecha1">
+                        <input type="datetime" name="fecha2" id="Fecha2">
+                        <input type="datetime-local" name="fecha3" id="Fecha3">
+                        <input type="time" name="fecha4" id="Fecha4">
+                        <input type="months" name="fecha5" id="Fecha5">
+
                     </td>
                 </tr>
                 <tr>
