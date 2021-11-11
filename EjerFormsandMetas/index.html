@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Meta</title>
+    <meta name="Title" content="Forms and Meta">
+    <meta name="Description" content="In the Forms and Meta store we have quality clothes and always in fashion, enter and find out the great catalog of the fall season!">
+    <meta name="keywords" content="clothing, sweatshirts, pants, clothing store, coats, bags, t-shirts, wallets, shoes and ankle boots">
+    <meta name="robots" content="index, follow">
+</head> 
+<body style="background-color: chartreuse;">
+    <h1>FORMS and Metas</h1>
+    <form>
+        <table style="border: 1px solid black;background-color: white;">
+            <tr>
+                <td><label for="Name">Name</label></td>
+                <td>
+                    <input type="text" name="Name" id="Name" placeholder="Write your name" required>
+                </td>
+                <td><label for="Last Name">Last Name</label></td>
+                <td>
+                    <input type="text" name="Last name" id="Last name" placeholder="Write your Last name" required>
+                </td>
+                <td><label for="Age">Age</label></td>
+                <td>
+                    <input type="date" name="Age" value="Age" id="Age" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Address">Address</label></td>
+                <td>
+                    <input type="text" name="Address" placeholder="Put your address">
+                </td>
+                
+                </td>
+                <td><label for="Phone">Phone</label></td>
+                <td>
+                    <input type="number" name="Phone" id="Number" placeholder="Number phone" required maxlength="9">
+                </td>
+                <td><label for="Town">Town</label></td>
+                <td> 
+                    <select>
+                        <option selected>Select province</option>
+                        <option value="Sevilla">Sevilla </option> 
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Jaén">Jaén</option>
+                        <option value="Cadiz"> Cadiz</option>
+                        <option value="Malaga">Málaga </option> 
+                        <option value="Huelva">Huelva </option>
+                        <option value="Almería">Almería</option>
+                        <option value="Granada">Granada</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Date job">Date of last job</label></td>
+                <td>
+                    <input type="date" name="Date job" id="date job">
+                </td>
+                
+                <td><label for="Work">Have you <br/>
+                    worked before?</label></td>
+                <td>
+                    <input type="radio" name="Male" id="Male" value="Male"> <span>Yes</span>
+                    <input type="radio" name="Femenine" id="Femenine" value="Femenine" checked> <span>No</span>
+                </td>
+                <td><label for="Social Networks">Social Networks:</label></td>
+                <td>
+                    <input type="checkbox" name="Facebook" id="Facebook" placeholder="Facebook"><span>Facebook</span>
+                    <input type="checkbox" name="Twitter" id="Twitter" placeholder="Twitter"><span>Twitter</span>
+                    <input type="checkbox" name="Instagram" id="Instagram" placeholder="Instagram"><span>Instagram</span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Description">Description</label></td>
+                <td>
+                    <input type="textarea" name="Description" id="Description" style="width: 200px;height: 100px;">
+                </td>
+                <td><label for="Email">Email</label></td>
+                <td>
+                    <input type="email" name="Email" id="Email" required> 
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="Send" value="Send" id="Send">
+                </td>
+                <td>
+                    <input type="reset" name="Delete" value="Delete" id="Delete">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
