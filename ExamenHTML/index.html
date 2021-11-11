@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <style>
+        .tabla {
+            
+            border-collapse: collapse;
+        }
+        .columna {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h2>El Ártico ha perdido el 14% de su hielo marino<br/> perenne en un solo año</h2>
+    <p> <span style="font-weight: bold;">WASHINGTON.-</span>El hielo del Ártico se redujo en un 14% durante el<br/>
+        último año, al perder <span style="font-weight: bold;">720.000 kilómetros cuadrados</span>, una superficie superior a la <br/>
+        Península Ibérica, según datos de la <span style="border-bottom: dotted;">NASA.</span>
+    </p>
+    <!-- segunda actividad -->
+    <div style="width: 600px; height: 200px;background-color: yellow;">
+        <h2 style="color: orange;word-spacing: 4px;position: relative;left: 220px;top: 10px;">Listas de enlaces</h2>
+        <p>
+            <ul>
+                <li><span>Buscadores</span>
+                    <ul>
+                        <li> <a href="https://www.bing.com/?setlang=es" target="blank">Bing</a> </li>
+                        <li>  <a href="https://www.google.es/" target="blank">Google</a></li> 
+                    </ul>
+                </li>
+                
+                <li>Redes
+                    <ul>
+                           <li> <a href="https://es-es.facebook.com/" target="blank">Facebook</a></li>
+                           <li><a href="https://twitter.com/?lang=es" target="blank">Twitter</a></li> 
+                    </ul>
+                </li>
+            </ul>
+         </p>
+    </div>
+    <br/>
+    <br/>
+
+    <!-- Ahora la tercera -->
+    <div style="width: 600px; height: 200px;">
+        <span style="position: relative; left: 5px;font-weight: bold;">Encabezado a la izquierda</span><br/>
+        <img src="imagenes/mar.PNG" alt="atardecer" style="position: relative;float: left;height: 150px;width: 250px;">
+        <span style="position: relative; left: 10px;">La música es, según la definición <br/>
+            tradicional del término, el arte de<br/> 
+            organizar sensible y lógicamente una<br/>
+             combinación coherente de sonidos y <br/>
+             silencios utilizando los principios <br/>
+             fundamentales de la melodía, la <br/>
+             armonía y el ritmo, mediante la <br/>
+              intervención de complejos procesos</span>
+    </div>
+    <!-- Ahora la cuarta -->
+    <table class="tabla">
+        <tr>
+            <td class="columna"><span>Lunes</span></td> 
+            <td class="columna"><span>Martes</span></td>
+            <td class="columna"><span>Miercoles</span></td>
+            <td class="columna"><span>Jueves</span></td>
+            <td class="columna"><span>Viernes</span></td>
+        </tr>
+        <tr>
+            <td class="columna"><span>Mates</span></td>
+            <td class="columna" rowspan="2" colspan="3"><span style="position: relative;left: 60px;">Dibujo</span></td>
+            <td class="columna" rowspan="3"><span>Historia</span></td>
+        </tr>
+        <tr>
+            <td class="columna" rowspan="3"><span>Física</span></td>
+            
+        </tr>
+        <tr>
+            <td class="columna" ><span>Descanso</span></td>
+            <td class="columna"><span>Descanso</span></td>
+            <td class="columna"><span>Descanso</span></td>
+        </tr>
+        <tr>
+            <td class="columna"><span>Gimnasia</span></td>
+            <td class="columna"><span>..futbolín..</span></td>
+            <td class="columna"><span>Gimnasia</span></td>
+            <td class="columna"><span>Mates</span></td>
+        </tr>
+    </table>
+    <!-- Quinta tarea -->
+    <br/>
+    <div style="width: 600px;height: 370px; background-color: yellow;">
+        <div style="width: 540px;height: 30px; background-color: orangered; position: relative;top: 15px; left: 30px;">
+            <span style="font-weight: bold; position: relative;left: 250px;top: 5px; color: white;">Header</span>
+        </div>
+        <div style="width: 400px; height: 200px; background-color: purple; position: relative; top: 25px; left: 30px; float: left;">
+            <span style="color: white; position: relative; left: 150px; top: 80px;">text-align:center</span>
+        </div>
+        <div style="background-color: blue;width: 125px;height: 200px; position: relative; float: left;left: 45px;top: 25px;">
+            <span style="color: white; position: relative; left: 45px;top: 70px;">Right</span>
+        </div>
+        <div style="background-color: brown; width: 540px;height: 90px;position: relative;clear: both; top: 35px;left: 30px;">
+            <h1  style="color: white; position: relative; left: 230px;top: 20px;">Footer</h1>
+        </div>
+    </div>
+    <!-- Ultima tarea -->
+    <br/>
+    <form>
+        <table>
+            <tr>
+                <td><label for="Password">Password:</label></td>
+                <td>
+                    <input type="password" name="Password" id="Password" placeholder="`Password" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Name">Name:</label></td>
+                <td>
+                    <input type="text" name="Name" id="Name" placeholder="Name" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Gender">Gender:</label></td>
+                <td>
+                    <input type="radio" name="Male" id="Male" value="Male"><span>Male</span>
+                    <input type="radio" name="Female" id="Female" value="Female"><span>Female</span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email:</label></td>
+                <td>
+                    <input type="email" name="Email" id="Email" placeholder="Email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Phone no">Phone no:</label>
+                </td>
+                <td>
+                    <input type="tel" name="tel" id="tel" max="1000">
+                </td>
+                <td>
+                    <input type="number" name="tel" id="tel" placeholder="98480******"  >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit" value="Submit" id="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
