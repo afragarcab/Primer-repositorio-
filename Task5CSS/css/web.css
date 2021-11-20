@@ -71,6 +71,8 @@
 #cajamenu {
     background-color: rgb(223, 142, 112);
     height: 50px;
+    position: relative;
+    bottom: 20px;
 }
 
 #menusito li {
@@ -130,11 +132,143 @@
 }
 
 #white {
-    background-color: white;
+    background-color: rgb(153, 152, 152);
     width: 330px;
     height: 700px;
     float: left;
     position: relative;
     left: 50px;
     top: 30px;
+}
+
+#follow {
+    height: 35px;
+    border: 1px solid rgb(70, 70, 70);
+}
+
+.sigueme {
+    color: rgb(71, 70, 70);
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+
+#imagenes {
+    height: 50px;
+    border: 1px solid rgb(70, 70, 70);  
+}
+
+.facebook {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+.twitter {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+.google {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+.pinterest {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+.wifi {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+#curso {
+    height: 35px;
+    border: 1px solid rgb(70, 70, 70);
+    position: relative;
+    top: 30px;
+}
+
+#online {
+    color: rgb(71, 70, 70);
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+
+#html5 {
+    height: 350px;
+    border: 1px solid rgb(70, 70, 70);
+    position: relative;
+    top: 30px;
+}
+
+.gratuito {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    color: rgb(71, 70, 70);
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+#titulohtml {
+    position: relative;
+    left: 20px;
+    font-size: 60px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.autor {
+    position: relative;
+    left: 110px;
+    color: rgb(71, 70, 70);
+}
+
+.strong {
+    font-weight: bold;
+}
+
+#tamañohtml {
+    width: 210px;
+    position: relative;
+    left: 30px;
+}
+
+#contenido {
+ height: 30px;   
+ border: 1px solid rgb(70, 70, 70);
+ position: relative;
+ top: 50px;
+}
+
+.categorias {
+    color: rgb(71, 70, 70);
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+#lastmenu {
+    position: relative;
+    top: 50px;
 }
