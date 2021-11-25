@@ -1,0 +1,37 @@
+#tarea1 {
+    width: 640px;
+    height: 390px;
+    margin: 0px auto;
+}
+
+#goku {
+    width: 600px;
+    position: relative;
+    top: 20px;
+    left: 15px;
+    
+}
+
+@media only screen and (max-width:1520px) and (min-width: 547px) {
+    #tarea1 {
+        border: 3px solid green;
+    }
+
+    img {
+        border: 3px solid purple;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width:547px) {
+    #tarea1 {
+       background-color: yellow; 
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 300px) {
+    #tarea1 {
+        position: relative;
+        float: left;
+    }
+    
+}
