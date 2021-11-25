@@ -1,0 +1,17 @@
+#primero p a {
+    color: red;
+}
+
+#primero p {
+    color: rgb(67, 95, 187);
+}
+
+#primero p em {
+    color: blue;
+    background-color: rgb(245, 245, 17);
+}
+
+.especial {
+    color: yellow;
+    background-color: black;
+}
