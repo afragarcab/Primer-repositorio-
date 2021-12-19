@@ -1,6 +1,9 @@
 #big {
     height: 800px;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
 }
 
 #head {
@@ -17,4 +20,52 @@
 
 #purple {
     color: blueviolet;
+}
+
+#span {
+    text-align: end;
+}
+
+div.better {
+    width: 650px;
+    height: 300px;
+    
+}
+
+#blue {
+    width: 300px;
+    height: 250px;
+    background-color: rgb(0, 195, 255);
+    border-radius: 25px 0px 25px 0px;
+}
+
+#yellow {
+    width: 300px;
+    height: 250px;
+    background-color: rgb(240, 197, 118);
+    border-radius: 25px 0px 25px 0px;
+}
+
+#salmon {
+    width: 300px;
+    height: 250px;
+    background-color: rgb(236, 144, 111);
+    border-radius: 25px 0px 25px 0px;
+}
+
+.border {
+    text-align: right;
+}
+
+.minitittle {
+    text-align: center;
+    color: white;
+}
+
+.width {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 80px;
+    top: 20px;
 }
