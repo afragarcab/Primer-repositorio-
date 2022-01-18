@@ -1,9 +1,6 @@
 #big {
-    height: 800px;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    background-color: black;
+    height: 1000px;
+    width: 1260px;    
 }
 
 #head {
@@ -23,31 +20,37 @@
 }
 
 #span {
-    text-align: end;
+    position: relative;
+    left: 1100px;
+    font-style: italic;
+    font-weight: boldbl;
 }
 
-div.better {
-    width: 650px;
+#better {
+    width: 1250px;
     height: 300px;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #blue {
-    width: 300px;
+    width: 400px;
     height: 250px;
     background-color: rgb(0, 195, 255);
     border-radius: 25px 0px 25px 0px;
 }
 
 #yellow {
-    width: 300px;
+    width: 400px;
     height: 250px;
     background-color: rgb(240, 197, 118);
     border-radius: 25px 0px 25px 0px;
 }
 
 #salmon {
-    width: 300px;
+    width: 400px;
     height: 250px;
     background-color: rgb(236, 144, 111);
     border-radius: 25px 0px 25px 0px;
@@ -68,4 +71,52 @@ div.better {
     position: relative;
     left: 80px;
     top: 20px;
+}
+
+#grey {
+    width: 1250px;
+    height: 370px;
+    background-color: grey;
+    border-radius: 25px 0px 25px 0px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+}
+
+#grey2 {
+    background-color: rgb(219, 215, 215);
+    width: 1200px;
+    height: 300px;
+    border-radius: 25px 0px 25px 0px;
+}
+
+.span3 {
+    position: relative;
+    left: 20px;
+}
+
+#ban {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    left: 500px;
+}
+
+#footer {
+    background-color: black;
+    width: 1250px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.azul {
+    color: rgb(0, 17, 255);
+}
+
+#white {
+    color: white;
+    position: relative;
+    left: 400px;
+    top: 10px;
+    
 }
