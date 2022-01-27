@@ -1,0 +1,46 @@
+//Primero voy a crear las variables para los colores el tamaño y estilos:
+
+$color-tittle: #df1717;
+$color-all: rgb(169, 167, 167);
+$color-li: #efeff7;
+$size-letter: 50px;
+$size-lista: 30px;
+$letter-font: Verdana,sans-serif;
+
+
+//Ahora empiezo con toda la artilleria
+
+body {
+    background-color: $color-all;
+}
+
+h1 {
+    color: $color-tittle;
+    font-size: $size-letter;
+    font-family: $letter-font;
+}
+
+@mixin menus {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 7px;
+    margin: 10px;
+    color: white;
+    font-size: $size-lista;
+    justify-content: space-between;
+
+}
+
+@mixin listas {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    @include menus;
+}
+
+nav ul li a {
+    @include listas;
+}

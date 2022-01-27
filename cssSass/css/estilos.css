@@ -97,4 +97,42 @@ div {
   height: 40px;
 }
 
+/* line 88, ../../../../Repositorio/Primer-repositorio-/cssSass/sass/estilos.scss */
+.micapa {
+  width: 31.25%;
+}
+
+/* line 92, ../../../../Repositorio/Primer-repositorio-/cssSass/sass/estilos.scss */
+.display, .display-success {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #51527F;
+}
+
+/* line 97, ../../../../Repositorio/Primer-repositorio-/cssSass/sass/estilos.scss */
+.display-success {
+  border-color: #c8c8c8;
+}
+
+/* line 102, ../../../../Repositorio/Primer-repositorio-/cssSass/sass/estilos.scss */
+ul {
+  list-style-type: none;
+  margin-top: 2em;
+}
+
+/* line 106, ../../../../Repositorio/Primer-repositorio-/cssSass/sass/estilos.scss */
+ul li {
+  background-color: blue;
+}
+
+/* line 109, ../../../../Repositorio/Primer-repositorio-/cssSass/sass/estilos.scss */
+ul li:hover {
+  background-color: red;
+}
+
+/* line 112, ../../../../Repositorio/Primer-repositorio-/cssSass/sass/estilos.scss */
+ul li a {
+  color: white;
+}
+
 /*# sourceMappingURL=estilos.css.map */

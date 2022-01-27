@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"//Primero voy a crear las variables para los colores el tamaño y estilos:\r\n\r\n$color-tittle: #df1717;\r\n$color-all: rgb(169, 167, 167);\r\n$color-li: #efeff7;\r\n$size-letter: 50px;\r\n$size-lista: 30px;\r\n$letter-font: Verdana,sans-serif;\r\n\r\n\r\n//Ahora empiezo con toda la artilleria\r\n\r\nbody {\r\n    background-color: $color-all;\r\n}\r\n\r\nh1 {\r\n    color: $color-tittle;\r\n    font-size: $size-letter;\r\n    font-family: $letter-font;\r\n}\r\n\r\n@mixin menus {\r\n    display: flex;\r\n    flex-direction: row;\r\n    list-style: none;\r\n    padding: 7px;\r\n    margin: 10px;\r\n    color: white;\r\n    font-size: $size-lista;\r\n    justify-content: space-between;\r\n\r\n}\r\n\r\n@mixin listas {\r\n    text-decoration: none;\r\n    color: black;\r\n}\r\n\r\nnav ul {\r\n    @include menus;\r\n}\r\n\r\nnav ul li a {\r\n    @include listas;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAYA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAVR,OAAkB;CAW7B;;;AAED,AAAA,EAAE,CAAC;EACC,KAAK,EAfM,OAAO;EAgBlB,SAAS,EAbC,IAAI;EAcd,WAAW,EAZD,OAAO,EAAC,UAAU;CAa/B;;;AAmBD,AAAA,GAAG,CAAC,EAAE,CAAC;EAhBH,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,GAAG;EACZ,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;EACZ,SAAS,EAvBA,IAAI;EAwBb,eAAe,EAAE,aAAa;CAWjC;;;AAED,AAAA,GAAG,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC;EARR,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,KAAK;CASf"
+}

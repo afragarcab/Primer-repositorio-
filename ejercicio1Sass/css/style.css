@@ -1,0 +1,31 @@
+/* line 13, ../../../../Repositorio/Primer-repositorio-/ejercicio1Sass/scss/style.scss */
+body {
+  background-color: #a9a7a7;
+}
+
+/* line 17, ../../../../Repositorio/Primer-repositorio-/ejercicio1Sass/scss/style.scss */
+h1 {
+  color: #df1717;
+  font-size: 50px;
+  font-family: Verdana, sans-serif;
+}
+
+/* line 40, ../../../../Repositorio/Primer-repositorio-/ejercicio1Sass/scss/style.scss */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 7px;
+  margin: 10px;
+  color: white;
+  font-size: 30px;
+  justify-content: space-between;
+}
+
+/* line 44, ../../../../Repositorio/Primer-repositorio-/ejercicio1Sass/scss/style.scss */
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
