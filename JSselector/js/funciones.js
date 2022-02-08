@@ -13,10 +13,22 @@ function iniciar(){
         
     }*/
 
-    document.getElementsByTagName("p")[0].innerHTML = "Primer P";
+    /*document.getElementsByTagName("p")[0].innerHTML = "Primer P";
     document.getElementsByTagName("p")[0].onclick = mostrarMensaje;
     
-    document.getElementsByClassName("clase")[1].onclick = mostrar("Pulsado");
+    document.getElementsByClassName("clase")[1].onclick = mostrar("Pulsado");*/
+
+    //document.querySelector("#principal p:first-child").onclick = alerta;
+
+    var coleccion = document.querySelectorAll("#principal p");
+    var coleccion = document.getElementById("principal").querySelectorAll("p");
+    for (let i = 0; i < coleccion.length; i++) {
+        coleccion[i].innerHTML = "P" + (i+1)
+        
+    }
+}
+function alerta(){
+    alert("ALERTA");
 }
 
 function mostrar(texto){
