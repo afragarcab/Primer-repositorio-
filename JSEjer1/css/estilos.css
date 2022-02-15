@@ -10,20 +10,3 @@
     background-color: red;
 }
 
-.sucess {
-    border: 1px solid rgb(4, 39, 4);
-    background-color: rgb(13, 228, 13);
-    color: rgb(26, 43, 26);
-}
-
-.error {
-    border: 1px solid rgb(75, 6, 6);
-    background-color: rgb(228, 13, 13);
-    color: rgb(65, 4, 4);
-}
-
-.warning {
-    border: 1px solid rgb(116, 116, 8);
-    background-color: yellow;
-    color: rgb(82, 82, 6);
-}
