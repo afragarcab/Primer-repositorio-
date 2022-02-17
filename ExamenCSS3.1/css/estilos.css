@@ -95,7 +95,42 @@ div h1 {
     width: 180px;
 }
 
-.border {
-    
+/*Ahora todo lo siguiente es para la actividad de selectores*/
 
+div#selectores h2, span {
+    font-style: italic;
 }
+
+div > #datos {
+    background-color: rgb(71, 70, 70);
+    color: black;
+}
+
+div span {
+    font-weight: bold;
+}
+
+div span.segundo:hover {
+    background-color: black;
+}
+
+div .segundo::first-letter {
+    font-size: 100px;
+}
+
+a[href*=".com"] {
+    color: blue;
+}
+
+a[href*=".es"] {
+    color: red;
+}
+
+div ul#lista li > a#lista1:hover {
+    font-size: 90px;
+}
+
+div ul#lista li > a#lista1 {
+    background-color: grey;
+}
+
