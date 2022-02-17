@@ -49,7 +49,7 @@ font-weight: bold;
 
 p#miparrafo::first-letter {
     font-weight: bold;
-    font-size: 90px;
+    font-size: 60px;
     color:blue;
     font-family: monospace;
     }
@@ -86,9 +86,9 @@ div + p {
         font-size: 80px;
     }
 
-
     a[href*="google"] {
         background-color: violet;
+        
         }
 
 
