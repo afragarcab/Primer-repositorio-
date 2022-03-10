@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora en javascript</title>
+    <title>Calculadora en javascript Tarea 9</title>
     <script type="text/javascript" src="js/funciones.js">
     </script>
 </head>
 <body>
     <table>
         <tr>
-            <td><h1>Calculadora</h1></td>
+            <td><h1 style="color: green;">Calculadora</h1></td>
         </tr>
         <tr>
             <td>
@@ -27,16 +27,16 @@
         </tr>
         <tr>
             <td>
-                <input type="button" value="+" id="suma" onclick="calcular()">
-                <input type="button" value="-" id="resta" onclick="calcular()">
-                <input type="button" value="*" id="multiplicar" onclick="calcular()">
-                <input type="button" value="/" id="division" onclick="calcular()">
+                <input type="button" value="+" id="suma" onclick="calcularSuma()">
+                <input type="button" value="-" id="resta" onclick="calcularResta()">
+                <input type="button" value="*" id="multiplicar" onclick="calcularMultiplicar()">
+                <input type="button" value="/" id="division" onclick="calcularDivision()">
             </td>
         </tr>
         <tr>
-            <td colspan="1">
+            <td>
                 <label for="resultado">Resultado: </label>
-                <input type="number" id="resul" name="resultado">
+                <input type="text" id="resultado" name="resultado">
             </td>
         </tr>
     </table>
