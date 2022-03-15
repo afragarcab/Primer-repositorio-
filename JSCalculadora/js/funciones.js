@@ -37,3 +37,16 @@ function calcularDivision(){
 
     document.getElementById("resultado").value = resultado;
 }
+
+/*function comprobar(){
+    var resultado = "";
+    var num1 = parseInt(document.getElementById("numero1").value);
+    var num2 = parseInt(document.getElementById("numero2").value);
+
+    if (op == "+"){
+        resultado = eval(num1 + num2);
+    }else if (op == "-"){
+        resultado = eval()
+    }
+}
+*/
