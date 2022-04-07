@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12 javascript</title>
+    <script type="text/javascript" src="js/funciones.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+</head>
+<body>
+    <div>
+        <h1>Actividad 1</h1>        
+    </div>
+    <div>       
+        <form action="" onsubmit="return validar()">
+            <table id="tabla">
+                <tr>
+                    <td>
+                        <label for="login">Login:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="login" name="login" autofocus/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="telefono">Teléfono</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="telefono" name="telefono"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="web">Web</label>
+                    </td>
+                    <td>
+                        <input type="text" id="web" name="web"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="aficiones">Aficiones: </label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="deporte" name="deporte"/>
+                        <input type="checkbox" id="cine" name="cine"/>
+                        <input type="checkbox" id="musica" name="musica"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>                        
+                        <input type="submit" value="ENVIAR"/>
+                    </td>
+                </tr>
+            </table>
+        </form> 
+        <br/>
+        <span id="resultado" class="span">
+            <ul>
+                
+            </ul>
+        </span>
+        <br/>
+      
+        <!-- Ahora comienza la segunda actividad -->
+        <h1>Actividad 2</h1>
+        <form>
+            <p>
+                <a href="https://www.amazon.es/" id="amazon">Amazon</a> <br/>
+                <a href="https://www.pccomponentes.com/" id="pccomponentes">PcComponentes</a> <br/>
+                <a href="https://www.coolmod.com/" id="coolmod">Coolmod</a>
+            </p>
+            <input type="button" value="Mágia"  id="tarea2" onclick="magia()">
+        </form>
+
+        <!-- Ahora comienza la tercera actividad -->
+        <br/>
+        <h1>Actividad 3</h1>
+        <form>
+            <table id="tabla">
+                <tr>
+                    <td>
+                        <label for="viaje">Indique el viaje:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="viaje" name="viaje" placeholder="Sevilla - Cadiz" autofocus/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="km">Kilómetros del viaje</label>
+                    </td>
+                    <td>
+                        <input type="number" id="km" name="km"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="kmg">Kilómetro de gasolina</label>
+                    </td>
+                    <td>
+                        <input type="number" id="kmg" name="kmg"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>                        
+                        <input type="submit" value="Calcular" onclick="calcularPrecio()"/>
+                    </td>
+                </tr>
+            </table>
+        </form> 
+        <span id="resul"></span>
+    </div>
+</body>
+</html>

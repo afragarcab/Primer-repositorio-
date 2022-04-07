@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#titulo1").click(function () {
+                $("#titulo1").addClass("color");
+            });
+
+            $("#titulo2").click(function () {
+                $("#titulo2").addClass("color2");
+            });
+
+            $("#ocultar").click(function () {
+                $("#lista1 li").hide();
+            });
+
+            $("#obtener").click(function () {
+                alert($("#parrafo3").text());
+            });
+
+            $("#modificar").click(function () {
+                $("#parrafo3").text("Se ha modificado porque eres un máquina");
+            });
+
+            $("#modificarTD").click(function () {
+                $("#tabla tr td").text("Esta tabla es especial");
+            });
+
+            $(".btn").on("click", function () {
+                switch ($(this).attr("id")) {
+                    case "#añadirpropiedad"
+                    
+                }
+            })
+
+
+
+
+            /*$("#añadirpropiedad").click(function () {
+                $("#tabla2 tr td").css("border", "1px solid black");
+            });
+
+            $("#recuperardatos").click(function () {
+                $("#resultado4").text("El borde de la tabla tiene un grosor de 1px");
+            });
+
+            $("#eliminarbordes").click(function () {
+                $("#tabla2 tr td")
+            });*/
+
+        });
+    </script>
+
+    <style>
+        .color{
+            color: red;
+            background-color: yellow;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .color2 {
+            color: purple;
+            background-color: pink;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo1">Esta es la primera actividad de clase jquery</h1>
+    <h2 id="titulo2">Viva el real betis balompie</h2>
+
+    <ul id="lista1">
+        <li><p>Mucho</p></li>
+        <li><p>Betis</p></li>
+    </ul>
+
+    <ul id="lista2">
+        <li><p>Viva</p></li>
+        <li><p>España</p></li>
+    </ul>
+
+    <input type="button" id="ocultar" value="Ocultar"/>
+    <br/>
+    <p id="parrafo3">El escritor maquiavelo escrbió un libro muy famoso llamado el principe</p>
+    <table id="tabla">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <input type="button" id="obtener" value="Obtener el texto de un párrafo">
+    <input type="button" id="modificar" value="Modificar el texto de un párrafo">
+    <input type="button" id="modificarTD" value="Modificar  el texto de los td de la tabla">
+
+    <br/>
+    <br/>
+    <table id="tabla2">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+    <input  type="button" id="añadirpropiedad" value="Añadir Propiedad de bordes" class="btn">
+    <input  type="button" id="recuperardatos" value="Recuperar Propiedad bordes" class="btn">
+    <input  type="button" id="eliminarbordes" value="Eliminar Borde" class="btn">
+
+    <span id="resultado4"></span>
+</body>
+</html>
