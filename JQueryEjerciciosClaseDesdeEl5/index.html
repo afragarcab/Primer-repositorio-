@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+
+    <script>
+        var d = $(document);
+        $(document).ready(function () {
+            //cuando tenga el raton encima se ponga una clase y cuando se quite de arriba se quite
+            $("#parra1").hover(function () {
+               $("#parra1").addClass("color1"); 
+            });
+
+            $("#parra1").mouseout(function () {
+               $("#parra1").removeClass("color1"); 
+            });
+            
+            //act8
+            $(".fondo td").mousedown(function () {
+            $(this).addClass("color1");
+            });
+
+            $(".fondo td").mouseup(function () {
+                $(this).removeClass("color1");
+            });
+
+        });
+    </script>
+
+    <style>
+        .color1{
+            color: red;
+            background-color: yellow;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .color2 {
+            color: purple;
+            background-color: pink;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="task5">
+        <p id="1">Viva el betis</p>
+        <p id="2">Viva españa</p>
+        <p id="3">Viva lolito</p>
+        <p id="4">Eloy no se pela</p>
+
+        <input type="button" id="añadir" value="Añadir clase">
+        <input type="button" id="quitar" value="Quitar clase">
+    </div>
+
+    <p><a href="https://www.amazon.es/"  target="blank" id="parra1">Amazon</a></p>
+    <p><a href="https://www.pccomponentes.com/" id="parra2" target="blank">pccomponentes</a></p>
+    <p><a href="https://es.aliexpress.com/"  id="parra3" target="blank">aliexpress</a></p>
+
+    <p id="eloy">Eloy tiene bigote</p>
+
+    <table class="fondo">
+        <tr>
+          <td style="border: 2px solid black; border-collapse: collapse">hola</td>
+          <td style="border: 2px solid black; border-collapse: collapse">
+            mundo
+          </td>
+        </tr>
+      </table>
+
+      <p>Este parrafo no tiene 100 carácteres</p>
+</body>
+</html>

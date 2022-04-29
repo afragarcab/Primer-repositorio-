@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Actividad1
+            $("#parra1").hover(function () {
+               $("#parra1").addClass("colorexam"); 
+            });
+
+            $("#parra1").mouseout(function () {
+               $("#parra1").removeClass("colorexam"); 
+            });
+
+            //Actividad2
+            $("#celda1").mousedown(function () {
+            $("#celda1").addClass("colorexam");
+            });
+
+            $("#celda1").mouseup(function () {
+                $("#celda1").removeClass("colorexam");
+            });
+
+            $("#celda2").mousedown(function () {
+            $("#celda2").addClass("colorexam");
+            });
+
+            $("#celda2").mouseup(function () {
+                $("#celda2").removeClass("colorexam");
+            });
+
+            //Actividad3
+
+
+            $("#poner").click(function () {
+                $(".fondo").each(estiloP);
+
+                    function estiloP(){  
+                    if((this.textContent.length) < 100) {  
+                    $(this).addClass("colorFondoAma"); 
+                    };  
+                }  
+            });
+
+            $("#quitar").click(function () {
+                $(".fondo").removeClass("colorFondoAma");
+            });
+        });
+    </script>
+    <style>
+        .colorexam{
+            background-color: green;
+        }
+
+        .colorFondoAma {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p><a href="https://www.pccomponentes.com/" id="parra1" target="blank">pccomponentes</a></p>
+    </div>
+    
+    <table class="act2">
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse" id="celda1">Mucho</td>
+                <td style="border: 1px solid black; border-collapse: collapse" id="celda2">Betis </td>
+            </tr>
+    </table>
+
+    <div id="parrafos">
+        <p class="fondo">Hacía frío y mamá había organizado una excursión a la nieve para jugar y pasarlo bien con mis hermanos.  Cuando llegamos al refugio, se escuchó una voz por el altavoz que nos daba la bienvenida a la montaña.
+
+            A mí me encaba la nieve, así que fui corriendo junto al refugio y me puse a hacer el mayor muñeco de nieve del mundo. O al menos, eso me parecía a mí. Me había llevado una bolsa con zanahorias, botones, una bufanda… Lo tenía todo para mi gran muñeco.
+            
+            Lo quería hacer tan grande que siempre se desmoronaba. Mis hermanos pasaban junto a mí y me decía que lo dejase, que no sería capaz. Pero entonces llegó mamá, me abrochó los botones del abrigo y me dijo al oído: “Con esfuerzo conseguirás lo que te propongas”
+            
+            Me puse a construir mi gran muñeco con más ganas que antes. Cuando papá pitaba con el coche para irnos, me faltaba ponerle la nariz. Vino mamás, me cogió en brazos y me ayudó a ponerla diciendo: “¿Ves hijo? Vales mucho”
+        </p>
+        
+
+        <p class="fondo">2º Párrafo que no tiene más de 100 letras</p>
+
+        <p class="fondo">Nuco vivía feliz en un árbol con sus papás que le cuidaban mucho. Lo que más le gustaba era ver jugar a los niños. Cada mañana se asomaba desde su nido y les veía correr, reírse, saltar a la comba… En cuanto supiera volar bajaría a jugar con ellos. Le encantaba oír sus risas, sus canciones, sus gritos… todo era perfecto, de no ser por un extraño sonido que se repetía varias veces al día y tras él, sólo silencio.
+
+            Por fin, Nuco se armo de valor, se lanzó al vacío y comenzó a mover las alas. “Mira mamá, estoy volando” gritaba feliz.
+            
+            Se acercó hasta donde estaban los niños para jugar con ellos, pero al llegar, sonó el ruido extraño y los niños desaparecieron corriendo. Era la sirena del colegio. Nuco se quedó muy triste al ver que todos se iban a clase y él no podía ir.
+        </p>
+        <p class="fondo">Mucho real betis balompie</p>
+      </div>
+      <input type="button" id="poner" value="Poner Fondo">
+      <input type="button" id="quitar" value="Quitar Fondo">
+</body>
+</html>
