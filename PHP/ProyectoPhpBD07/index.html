@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIENVENIDOS A MI WEB</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+
+  <style>
+    @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+    
+    html {
+         scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+    }
+
+    h1 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      letter-spacing: 2px;
+      font-size: 48px;
+    }
+
+    p {
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 1px;
+      font-size: 14px;
+      color: #333333;
+    }
+
+    .header {
+      position: relative;
+      text-align: center;
+      background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+      color: white;
+    }
+
+    .logo {
+      width: 50px;
+      fill: white;
+      padding-right: 15px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .inner-header {
+      height: 65vh;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .flex {
+      /*Flexbox for containers*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .waves {
+      position: relative;
+      width: 100%;
+      height: 15vh;
+      margin-bottom: -7px;
+      /*Fix for safari gap*/
+      min-height: 100px;
+      max-height: 150px;
+    }
+
+    .content {
+      position: relative;
+      height: 20vh;
+      text-align: center;
+      background-color: white;
+    }
+
+    /* Animation */
+
+    .parallax>use {
+      animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+    }
+
+    .parallax>use:nth-child(1) {
+      animation-delay: -2s;
+      animation-duration: 7s;
+    }
+
+    .parallax>use:nth-child(2) {
+      animation-delay: -3s;
+      animation-duration: 10s;
+    }
+
+    .parallax>use:nth-child(3) {
+      animation-delay: -4s;
+      animation-duration: 13s;
+    }
+
+    .parallax>use:nth-child(4) {
+      animation-delay: -5s;
+      animation-duration: 20s;
+    }
+
+    @keyframes move-forever {
+      0% {
+        transform: translate3d(-90px, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(85px, 0, 0);
+      }
+    }
+
+    /*Shrinking for mobile*/
+    @media (max-width: 768px) {
+      .waves {
+        height: 40px;
+        min-height: 40px;
+      }
+
+      .content {
+        height: 30vh;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+  <script>window.scroll({
+      top: 2500,
+      left:0,
+      behavior: 'smooth'});
+  </script>
+</head>
+
+<body>
+  <!--Hey! This is the original version
+of Simple CSS Waves-->
+
+  <div class="header">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+      <!--Just the logo.. Don't mind this-->
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
+        style=" fill:#000000;">
+        <path fill="#f8e169"
+          d="M40,25c0-8.822-7.178-16-16-16S8,16.178,8,25c0,1.569-1.209,2.843-2.745,2.974 C6.686,37.051,14.521,44,24,44s17.314-6.949,18.745-16.026C41.209,27.843,40,26.569,40,25z">
+        </path>
+        <path fill="#fae56b"
+          d="M24,3C11.869,3,2,12.869,2,25c0,1.657,1.343,3,3,3c0.088,0,0.17-0.018,0.255-0.026 C5.102,27.003,5,26.014,5,25C5,14.507,13.507,6,24,6s19,8.507,19,19c0,1.014-0.102,2.003-0.255,2.974C42.83,27.982,42.912,28,43,28 c1.657,0,3-1.343,3-3C46,12.869,36.131,3,24,3z">
+        </path>
+        <path fill="#f5bc00"
+          d="M24,6C13.507,6,5,14.507,5,25c0,1.014,0.102,2.003,0.255,2.974C6.791,27.843,8,26.569,8,25 c0-8.822,7.178-16,16-16s16,7.178,16,16c0,1.569,1.209,2.843,2.745,2.974C42.898,27.003,43,26.014,43,25C43,14.507,34.493,6,24,6z">
+        </path>
+        <circle cx="16.5" cy="22.5" r="5.5" fill="#2100c4"></circle>
+        <circle cx="18" cy="22" r="4" fill="#c2ffff"></circle>
+        <circle cx="31.5" cy="22.5" r="5.5" fill="#2100c4"></circle>
+        <rect width="6" height="1" x="21" y="28" fill="none"></rect>
+        <circle cx="33" cy="22" r="4" fill="#c2ffff"></circle>
+        <path fill="#f5bc00"
+          d="M24,22L24,22c-4.418,0-8,3.582-8,8v2.357c0,1.308,0.941,2.499,2.242,2.63 C19.739,35.137,21,33.966,21,32.5V29h6l0,3.357c0,1.308,0.941,2.499,2.242,2.63C30.739,35.137,32,33.966,32,32.5V30 C32,25.582,28.418,22,24,22z">
+        </path>
+        <path fill="#eb7900" d="M21,28.5v4.477C21.838,33.61,22.869,34,24,34s2.162-0.39,3-1.023V28.5H21z"></path>
+        <ellipse cx="24" cy="28.5" fill="#2100c4" rx="3" ry="2.5"></ellipse>
+      </svg>
+      <h1>BIENVENIDOS A MI WEB </h1>
+    </div>
+
+    <!--Waves Container-->
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+    <!--Waves end-->
+
+  </div>
+  <!--Header ends-->
+
+  <!--Content starts RECUERDA TODO LA INFORMACION QUE HAGAS AQUIIIIIIIIIIIIII-->
+  <!-- Aquí va a estar la carta que voy a usar con un gif -->
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="container" style="position: relative; top: 150px;">
+      <div class="col">
+        <div class="card h-100">
+         <img src="imagenes/insertar.gif" class="card-img-top" alt="insertar.gif">
+          <div class="card-body">
+            <h5 class="card-title">Insertar</h5>
+            <p class="card-text">Aquí puedes insertar los datos para que se guarden en una base de datos</p>
+          </div>
+          <div class="card-footer">
+            <a style="position: relative; left: 150px;" href="insertar.php" class="btn btn-primary">Insertar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="imagenes/consultar.gif" class="card-img-top" alt="consultar.gif">
+          <div class="card-body" style="position: relative; left: 60px;">
+            <h5 class="card-title">Consultar Datos</h5>
+            <p class="card-text">Consultar los datos de la base de datos</p>
+          </div>
+          <div class="card-footer">
+            <a style="position: relative; left: 150px;" href="consultar.php" class="btn btn-primary">Consultar Datos</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="imagenes/consultaconjoin.gif" class="card-img-top" alt="consultaconjoin.gif">
+          <div class="card-body" style="position: relative; left: 20px;">
+            <h5 class="card-title">Consultar Datos Join</h5>
+            <p class="card-text">Consultar los datos de una de las dos tablas.</p>
+          </div>
+          <div class="card-footer">
+            <a style="position: relative; left: 150px;" href="consultarC.php" class="btn btn-primary">Consultar Datos
+              Join</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="position: relative; top: 240px; left: 270px;">
+      <a href="consultar.php"><img src="imagenes/PHP.PNG" alt="estructura php"></a>
+  </div>
+
+
+  </div>
+  <!--Content ends-->
+
+</body>
+
+</html>

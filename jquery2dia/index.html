@@ -68,7 +68,10 @@
                 }else {
                     $("#myemail").remove();
                 }
-            })
+            });
+
+            $("#poner").click(function () {
+            $("#condicion").hide();
         });
     </script>
 
@@ -139,5 +142,8 @@
     <div id="capaMail">
         <input type="checkbox" id="checkMail">¿Email?
     </div>
+
+    <h1 id="condicion">Esto es para practicar condiciones</h1>
+    <button id="poner" value="Poner fondo">Añadir Estilo</button>
 </body>
 </html>
